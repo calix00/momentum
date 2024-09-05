@@ -1,46 +1,49 @@
 const quotes = [
     {
-        quote: "Life si full of ups and downs.",
-        author: "",
+        quote: "The way to get started is to quit talking and begin doing.",
+        author: "Walt Disney",
     },
     {
-        quote: "Live as if you were to die tomorrow.",
-        author: "",
+        quote: "Life is what happens when you're busy making other plans.",
+        author: "John Lennon",
     },
     {
-        quote: "Believe in your self.",
-        author: "",
+        quote: "The world is a book and those who do not travel read only one page.",
+        author: "Saint Augustine",
     },
     {
-        quote: "past is just pat.",
-        author: "",
+        quote: "Life is either a daring adventure or nothing at all.",
+        author: "Helen Keller",
     },
     {
-        quote: "Life is not all beer and skittles",
-        author: "",
+        quote: "To Travel is to Live",
+        author: "Hans Christian Andersen",
     },
     {
-        quote: "Until death, it is all life.",
-        author: "",
+        quote: "Only a life lived for others is a life worthwhile.",
+        author: "Albert Einstein",
     },
     {
-        quote: "Don't dwell on the past.",
-        author: "",
+        quote: "You only live once, but if you do it right, once is enough.",
+        author: "Mae West",
     },
     {
-        quote: "The only cure for grief is action.",
-        author: "",
+        quote: "Never go on trips with anyone you do not love.",
+        author: "Hemmingway",
     },
     {
-        quote: "No sweat, No sweet.",
-        author: "",
+        quote: "We wander for distraction, but we travel for fulfilment.",
+        author: "Hilaire Belloc",
     },
     {
-        quote: "Where there is a will there is a way.",
-        author: "",
+        quote: "Travel expands the mind and fills the gap.",
+        author: "Sheda Savage",
     },
-    {
-        quote: "Waste no Fresh tears over old griefs",
-        author: "",
-    },
-]
+];
+
+const quote = document.querySelector("#quote span:first-child");
+const author = document.querySelector("#quote span:last-child");
+const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
+quote.innerText = todaysQuote.quote;
+author.innerText = todaysQuote.author;
